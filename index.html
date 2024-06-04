@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon/pngwing 4.png" type="x-icon">
+    <title>Phone Hunter</title>
+</head>
+
+<body class="bg-slate-600">
+
+    <!-- header section start -->
+    <header>
+
+        <!-- navbar start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-xl text-white">Phone Hunter</a>
+                </div>
+                <div class="flex-none gap-2">
+                    <div class="form-control flex flex-row space-x-2">
+                        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" id="input-field" />
+                        <button onclick="handleSearch()" class="btn btn-primary ml-4 w-32">Search</button>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                            <div class="w-10 rounded-full">
+                                <img alt="Tailwind CSS Navbar component"
+                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                        </div>
+                        <ul tabindex="0"
+                            class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                            <li>
+                                <a class="justify-between">
+                                    Profile
+                                    <span class="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li><a>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- slider start -->
+        <section>
+            <div class="carousel w-full rounded-lg mt-6 text-black">
+                <!-- slide 1 start -->
+                <div id="slide1" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Apple Iphone 13 Pro Max
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/promax13.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide9" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 2 start -->
+                <div id="slide2" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Apple Iphone 14 Pro Max
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/promax14.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 3 start -->
+                <div id="slide3" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Apple Iphone 15 Pro Max
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/promax15.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 4 start -->
+                <div id="slide4" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Google Pixel 8 pro
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/PixelPro8.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide5" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 5 start -->
+                <div id="slide5" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Google Pixel 7 pro
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/PixelPro7.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide6" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 6 start -->
+                <div id="slide6" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Google Pixel 6 pro
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/pixelpro6.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide5" class="btn btn-circle">❮</a>
+                        <a href="#slide7" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 7 start -->
+                <div id="slide7" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Samsung Galaxy s24 Ultra
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/ultra24.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide6" class="btn btn-circle">❮</a>
+                        <a href="#slide8" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 8 start -->
+                <div id="slide8" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Samsung Galaxy s23 Ultra
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/ultra23.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide7" class="btn btn-circle">❮</a>
+                        <a href="#slide9" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+                <!-- slide 9 start -->
+                <div id="slide9" class="carousel-item bg-white relative w-full">
+                    <div class="flex flex-col lg:flex-row lg:p-32 lg:gap-x-44">
+                        <div class="flex-1 space-y-7 text-wrap">
+                            <h2 class="font-bold text-6xl">
+                                Samsung Galaxy s22 Ultra
+                            </h2>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humou.
+                            </p>
+                            <button class="btn btn-error">
+                                BUY NOW
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <img src="images/slider/ultras22.jpg" class="" />
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide8" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Main section start -->
+    <main class="p-8">
+        <!-- search field section start -->
+        <!-- <section class="mt-8 ">
+            <h2 class="text-5xl font-semibold mx-auto text-white ml-12">
+                Search your <span class="text-red-700">Phone</span> here
+            </h2>
+            <div class="ml-12 mt-4">
+                <input type="text" placeholder="Search here..." class="input input-bordered w-full max-w-xs"
+                    id="input-field">
+                <button onclick="handleSearch()" class="btn btn-primary ml-4 w-32">Search</button>
+            </div>
+        </section> -->
+
+        <!-- spinner section -->
+        <div id="spinner" class=" my-32 text-center hidden">
+            <span class="loading loading-infinity loading-lg"></span>
+        </div>
+        <!-- result section start -->
+        <section>
+            <div id="phone-container" class="my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            </div>
+            <div id="show-all-button" class="text-center  my-6 hidden">
+                <button onclick="handleShowAll()" class="btn btn-active btn-accent">Show ALL</button>
+            </div>
+        </section>
+
+        <!-- modal section start -->
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box p-4 bg-white text-black space-y-3">
+                    <h3 id="show-details-phone-name" class="font-bold text-3xl"></h3>
+                    <div id="show_details_container">
+                    </div>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+    </main>
+
+    <!-- footer section start here -->
+    <footer>
+        <section class="bg-white py-32 px-32">
+            <div class="flex flex-row justify-between">
+                <div class="space-y-2">
+                    <h2 class="text-4xl text-black font-bold">
+                        Hot Gadgets
+                    </h2>
+                    <p class="text-lg font-normal text-black">You can definitely work.</p>
+                </div>
+                <div class="flex flex-row space-x-3">
+                    <a>
+                        <img src="images/icon/Facebook.png">
+                    </a>
+                    <a>
+                        <img src="images/icon/Twitter.png">
+                    </a>
+                    <a>
+                        <img src="images/icon/Instagram.png">
+                    </a>
+                    <button class="btn btn-primary text-lg text-white font-medium">Join Premium</button>
+                </div>
+            </div>
+            <hr class="bg-black border-1 mx-36 my-12">
+            <div class="flex flex-row justify-between">
+                <div class="flex flex-col space-y-2">
+                    <div class="text-lg text-black">Product</div>
+                    <div class="text-lg text-black">Browse jobs</div>
+                    <div class="text-lg text-black">Remote jobs</div>
+                    <div class="text-lg text-black">Startup jobs</div>
+                    <div class="text-lg text-black">Company jobs</div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <div class="text-lg text-black">Popular</div>
+                    <div class="text-lg text-black">UIUX Design</div>
+                    <div class="text-lg text-black">Product Design</div>
+                    <div class="text-lg text-black">Back-End Developer</div>
+                    <div class="text-lg text-black">Front-End Developer</div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <div class="text-lg text-black">Resource</div>
+                    <div class="text-lg text-black">Faq</div>
+                    <div class="text-lg text-black">Support</div>
+                    <div class="text-lg text-black">Privacy Policy</div>
+                    <div class="text-lg text-black">Terms of Service</div>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <div class="text-lg text-black">Company</div>
+                    <div class="text-lg text-black">About Us</div>
+                    <div class="text-lg text-black">Contact Us</div>
+                    <div class="text-lg text-black">Career Tips</div>
+                    <div class="text-lg text-black">Careers</div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- js link -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
